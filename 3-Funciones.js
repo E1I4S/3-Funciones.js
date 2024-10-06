@@ -72,9 +72,9 @@ console.log(restar(45, 15))
 
 // 3.2 Escribe una **function expression** llamada `saludar` que acepte un parámetro `nombre` y devuelva "Hola, [nombre]".
     const saludar=function(nombre){
-        return "hola", + nombre;
+        return "hola " + nombre;
     }
-    console.log(saludar(nombre))
+    console.log(saludar("Matias"))
 
 // 3.3 Crea una **function expression** llamada `esPar` que acepte un número como parámetro y devuelva `true` si el número es par, o `false` en caso contrario.
 const esPar = function(numero) {
@@ -132,30 +132,26 @@ function fibonacci(n) {
       }
 // 5.3 Crea una función recursiva llamada `factorial` que calcule el factorial de un número. El factorial de n (n!) es el producto de todos los números enteros positivos menores o iguales a n.
 function factorial(n) {
-    function factorial(n) {
         if (n==0 || n==1) {
           return 1; 
         } else {
           return n*factorial(n-1); 
         }
       }
-      console.log(factorial(n));     
+      console.log(factorial(8));     
 }
 
 // 5.4 Escribe una función recursiva que calcule la potencia de un número dado el exponente. Por ejemplo: `potencia(2, 3) -> 8`
 function potencia(base, exponente) {
-    function potencia(base, exponente) {
         if (exponente==0) {
           return 1; 
         } else if (exponente<0) {
           return 1/potencia(base,-exponente); 
         } else {
-          
           return base*potencia(base,exponente-1);
         }
       }
-      console.log(potencia(30, 3));  
-}
+      console.log(potencia(30, -3));  
 
 // Exportar las funciones para que puedan ser probadas
 module.exports = {
